@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 1px solid black;
+    background-color: yellowgreen;
+    display: flex; //Ativa as caixas flexíveis
+    justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
+    justify-content: flex-end; //Os itens são postos no final do eixo principal.
+    justify-content: center; //Os itens são postos no meio do eixo principal.
+    justify-content: space-around; //O primeiro espaço vazio e o ultimo são iguais.
+    //justify-content: space-evenly; //Espaçamento igual entre todos os itens.
+    //justify-content: space-between; //Primeiro e ultimo item ficam encostados na parede.
+    height: 35px;
+    align-items: flex-start; //Padrão. Os itens são postos no começo do eixo Y.
+    align-items: flex-end; //Padrão. Os itens são postos no final do eixo Y.
+    align-items: center; //Padrão. Os itens são postos no centro do eixo Y.
+}
+
+h2{
+    border: 1px solid blueviolet;
+}
+
+nav{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: red;
+}
