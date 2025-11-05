@@ -33,4 +33,38 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   color: red;
+}
+
+.produtosDisponiveis {
+  background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article {
+  border: solid 1px red;
+  width: 20%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis img {
+  width: 100%;
+  height: 28vh;
+  border: solid;
+}
+.produtosDisponiveis button {
+  width: 50%;
+  height: 5vh;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  background-color: #16a34a;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 25px;
 }/*# sourceMappingURL=style.css.map */
