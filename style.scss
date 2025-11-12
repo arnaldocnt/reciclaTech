@@ -16,9 +16,10 @@ header {
     align-items: flex-start; //Padrão. Os itens são postos no começo do eixo Y.
     align-items: flex-end; //Padrão. Os itens são postos no final do eixo Y.
     align-items: center; //Padrão. Os itens são postos no centro do eixo Y.
+
 }
 
-div{
+div {
     display: flex;
     justify-content: space-between;
     width: 16%;
@@ -41,7 +42,7 @@ a {
     color: #4B5563;
 }
 
-.btnVerdeHeader{
+.btnVerdeHeader {
     background-color: #21C05C;
     color: white;
     font-size: 1rem;
@@ -49,30 +50,98 @@ a {
     border-radius: 3px;
 }
 
-.primeiraSection{
-    background-color: yellow;
+.primeiraSection {
+    display: flex;
+    justify-content: space-between;
     height: 55vh;
+    padding: 0 5% 0 5%;
 
-    section{
-        border: solid;
-        width: 55%;
-        height: 55vh;
+    section {
+        width: 50%;
+        height: 48vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 3.75rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    img {
+        border: solid;
+        width: 29%;
+    }
+}
+
+.boxBtn {
+    width: 40vw;
+    height: 7vh;
+
+    button {
+        border-radius: 8px;
+        width: 43%;
+    }
+
+    .btnVerde {
+        border: #16A34A;
+        background-color: #16A34A;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    .presente {
+        width: 8%;
+        border: solid;
+    }
+
+    .btnBranco {
+        margin-left: 10%;
+        border: solid 0.8px #2563EB;
+        color: #2563EB;
+    }
+}
+
+
+
+.painel {
+    justify-content: space-around;
+}
+
+.categoria {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 100%;
+    height: 30vh;
+
+    h2 {
+        font-size: 3rem;
+        padding-bottom: 5vh;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding-bottom: 10vh;
     }
 }
 
 .produtosDisponiveis {
-    background-color: aquamarine;
-    justify-content: space-between;
+    background-color: #f3f5f8;
+    justify-content: space-around;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
 
     article {
-        border: solid 1px red;
+
+        border: solid 1px #16A34A;
+        border-radius: 8px;
+        background-color: #fff;
         width: 20%;
         height: 60vh;
         display: flex;
@@ -86,9 +155,9 @@ a {
     img {
         width: 100%;
         height: 28vh;
-        border: solid;
     }
-    button{
+
+    button {
         width: 50%;
         height: 5vh;
         cursor: pointer;
@@ -97,6 +166,53 @@ a {
         color: #fff;
         font-size: 1.15rem;
         font-weight: bold;
-        border-radius: 25px;
+        border-radius: 8px;
+    }
+}
+
+//Responsivo
+
+//Smartphone max: 500px
+
+@media(max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    .caixaLogo {
+        width: 65%;
+    }
+
+    nav {
+        width: 90%;
+
+        a {
+            font-size: 1rem;
+        }
+
+        .btnVerdeHeader {
+            font-size: 1.3rem;
+        }
+    }
+
+    //Section Produtos disponiveis
+
+    .produtosDisponiveis {
+        flex-direction: column;
+
+
+        article {
+            width: 55%;
+            text-align: center;
+            margin-bottom: 10%;
+
+            button {
+                font-size: 0.8rem;
+                font-weight: 400;
+                width: 50%;
+            }
+        }
     }
 }
