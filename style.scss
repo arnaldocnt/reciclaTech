@@ -71,8 +71,8 @@ a {
     p {
         font-size: 1.2rem;
     }
+
     img {
-        border: solid;
         width: 29%;
     }
 }
@@ -102,31 +102,124 @@ a {
         margin-left: 10%;
         border: solid 0.8px #2563EB;
         color: #2563EB;
+        font-size: 1.4rem;
     }
 }
 
 
 
 .painel {
+    display: flex;
+    height: 25vh;
     justify-content: space-around;
+    align-items: center;
+    background-color: #f3f5f8;
+
+    div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+
+    H2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #16A34A;
+    }
+
+    P {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 }
 
-.categoria {
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: 2vh;
-    width: 100%;
+}
+
+
+
+
+.comoFunciona {
     height: 30vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    article {
+        width: 95%;
+        height: 50%;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            height: 65%;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 400;
+            font-size: 1.6;
+        }
+    }
+}
+
+.perfil {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-around;
+
+    p {
+        height: 25%;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    ul {
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+.doadores {
+    background-color: #f3f5f8;
+    border-radius: 12px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 
     h2 {
-        font-size: 3rem;
-        padding-bottom: 5vh;
+        width: 85%;
+        color: #16A34A;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.adquirentes {
+    background-color: #f3f5f8;
+    border-radius: 12px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    h2 {
+        width: 85%;
+        color: #2563EB;
+        font-size: 2.5rem;
+        font-weight: 400;
     }
 
-    h3 {
-        font-size: 2rem;
-        padding-bottom: 10vh;
-    }
 }
 
 .produtosDisponiveis {
@@ -199,6 +292,34 @@ a {
 
     //Section Produtos disponiveis
 
+    .primeiraSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 90vh;
+        
+        section{
+            width: 100%;
+            height: 30vh;
+        }
+
+        h2{
+            font-size: 2.3rem;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
+        .boxBtn{
+            width: 100%;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
     .produtosDisponiveis {
         flex-direction: column;
 
@@ -214,5 +335,33 @@ a {
                 width: 50%;
             }
         }
+    }
+
+    .painel{
+
+        div{
+            width: 25%;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+    }
+
+    .comoFunciona{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        
+        h3{
+            width: 95%;
+            display: flex;
+        }
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        height:80vh;
     }
 }
